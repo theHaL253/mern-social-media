@@ -11,8 +11,11 @@ const HomePage = () => {
   const isNonMobileScreens = useMediaQuery("(min-width:1000px)");
   const { _id, picturePath } = useSelector((state) => state.user);
 
+
+  /*the return keyword return the jxs structure of the page layout*/
   return (
     <Box>
+      {/*the navbar is imported from navbar.jsx*/}
       <Navbar />
       <Box
         width="100%"
