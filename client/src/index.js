@@ -19,7 +19,7 @@ import storage from "redux-persist/lib/storage";
 import { PersistGate } from "redux-persist/integration/react";
 
 const persistConfig = { key: "root", storage, version: 1 };
-{/*authReducer: This is a custom reducer function that handles the state management related to authentication. It defines how the state should be updated based on dispatched actions. */}
+/*authReducer: This is a custom reducer function that handles the state management related to authentication. It defines how the state should be updated based on dispatched actions. */
 const persistedReducer = persistReducer(persistConfig, authReducer);
 const store = configureStore({
   reducer: persistedReducer,
